@@ -203,7 +203,7 @@ https://twitter.com/mba_chibuezez
   .skills-header, .service-header{
     position: absolute;
     left: 50%;
-    top: 10;
+    top: 15%;
     transform: translate(-50%, 0);
     text-align: center;
     text-transform: uppercase;
@@ -225,7 +225,7 @@ https://twitter.com/mba_chibuezez
   }
   .skill-col{    
     margin: 50px auto;
-    margin-top: 70px;
+    margin-top: 150px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -234,8 +234,13 @@ https://twitter.com/mba_chibuezez
 
 
 
-  .skill-set .fa-brands, .skill-set .fa-solid{
+  .skill-set .fa-brands{
     font-size: 64px;
+  }
+  .skill-set .fa-solid{
+    font-size: 44px;
+    padding: 10px;
+    color: rgb(4, 158, 158);
   }
   .fa-js{
     color: yellow;
