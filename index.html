@@ -33,18 +33,18 @@
           <i class="fas fa-bars" ></i>
         </div>
         </div>
-      <div class="dropdown_menu">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>  
+        <div class="dropdown_menu">
+          <ul>
+            <li onclick="navClose()"><a href="#hero">Home</a></li>
+            <li onclick="navClose()"><a href="#skills">Skills</a></li>
+            <li onclick="navClose()"><a href="#services">Services</a></li>
+            <li onclick="navClose()"><a href="#">FAQS</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="img" data-aos="zoom-in" data-aos-duration="1400">
         <img src="./images/GOZ_1223.jpeg" alt="">
       </div>
@@ -90,7 +90,7 @@
     </section> -->
 
     <!-- Skill Set -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <span class="skills-header">Skill set</span>
       <div class="skill-col">
         <div class="skill-set">
@@ -128,7 +128,7 @@
 
 
     <!-- Services -->
-    <section class="service-container">
+    <section class="service-container" id="services">
       <span class="service-header">Services</span>
       <div class="service-col">
         <div class="service">
