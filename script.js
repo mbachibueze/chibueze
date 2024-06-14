@@ -11,4 +11,7 @@ toggleBtn.onclick = function(){
 
 const navClose = () =>{
   dropDownMenu.classList.remove('open')
+
+  const isOpen = dropDownMenu.classList.contains('open')
+  toggleBtnIcon.classList = isOpen ? "fas fa-xmark" : "fas fa-bars"
 }
