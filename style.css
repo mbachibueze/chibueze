@@ -232,8 +232,8 @@ https://twitter.com/mba_chibuezez
     text-align: center;
     background-color: #414e6e;
     padding: 5px;
-    width: 100px;
-    height: 130px;
+    width: 80px;
+    height: fit-content;
     gap: 10px;
   }
   .skill-col{    
