@@ -1,0 +1,299 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+
+body{
+  background-color: #262c40;
+}
+li a{
+  text-decoration: none;
+}
+a{
+  color: white;
+}
+.main-container{
+  color: white;
+  overflow-x: hidden;
+}
+
+
+.navigation{
+  position: fixed;
+  width: 100%;
+  background-color: #262c40;
+  z-index: 1000;
+}
+
+/* dropdown Menu */
+
+.dropdown_menu{
+  height: 0;
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden; 
+  transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: ease 0.7s;
+
+}
+
+/* .dropdown_menu{
+  background-color: #4a9cc4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10%,10%);
+  width: 90%;
+  height: 120vh;
+  z-index: 2;
+
+} */
+.dropdown_menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.dropdown_menu li a{
+  color: white;
+}
+
+.dropdown_menu.open{
+  height: 200px;
+}
+
+
+
+@media(max-width: 650px){
+  .navigation{
+    box-shadow: 0 0 5px 0 #414e6e;
+  }
+  .nav-bar{
+    width: 95%;
+    margin: auto;
+  }
+  .nav-bar img{
+    width: 150px;
+  }
+  .nav-bar{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fa-bars{
+    color: white;
+    font-size: 6vw;
+  }
+  .nav-links{
+    display: none;
+  }
+  /* .nav-bar .toggle-btn{
+    display: block;
+  }
+  .dropdown_menu{
+    display: block;
+  } */
+
+  /* Hero Section */
+
+  .hero{
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20vw 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .hero h1{
+    font-size: 7vw;
+  }
+  .hero p{
+    font-size: 3.7vw;
+  }
+
+  .img{
+    z-index: 2;
+    width: fit-content;
+    display: flex;
+    padding: 0 20px 20px 20px;
+    justify-content: space-around;
+    background-color: #414e6e;
+  }
+  .img img{
+    width: 45vw;
+    stroke: black;
+    stroke-width: 10px;
+    border: 10px solid #262c40;
+    border-top: 0;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .summary-col{
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+  }
+  .summary-col p, a{
+    color: rgb(230, 229, 229);
+  }
+  .summary{
+    line-height: 5vw;
+  }
+  .summary span{
+    color: #9cb6dd;
+  }
+  .location{
+    line-height: 6vw;
+  }
+  .links{
+    display: flex;
+    gap: 10px;
+  }
+
+  /* #438e96 
+  
+https://twitter.com/mba_chibuezez
+
+  */
+
+
+  /* About Section */
+  .about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    background-color: #414e6e;
+  }
+  .about-header{ 
+    background-color: #262c40;
+    padding: 5px 10px;
+    border-radius: 100px;
+  }
+
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .about-container .img{
+    background-color: #262c40;
+  }
+  .about-container .img img{
+    border: 10px solid #414e6e;
+    border-top: 0;
+  }
+  .about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    text-wrap: wrap;
+  }
+
+
+  /* Skill Set */
+  .skills{
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+  }
+  .skills-header, .service-header{
+    position: absolute;
+    left: 50%;
+    top: 10;
+    transform: translate(-50%, 0);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #414e6e;
+    padding: 5px 20px;
+    border-radius: 100px;
+  }
+  .skill-set{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-color: #414e6e;
+    padding: 5px;
+    width: 100px;
+    height: 130px;
+    gap: 10px;
+  }
+  .skill-col{    
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+
+
+  .skill-set .fa-brands, .skill-set .fa-solid{
+    font-size: 64px;
+  }
+  .fa-js{
+    color: yellow;
+  }
+  .fa-html5{
+    color: rgb(146, 146, 250);
+  }
+  .fa-css3-alt{
+    color: orange;
+  }
+  .fa-react{
+    color: rgb(45, 45, 224);
+  }
+  .fa-wrench{
+    color: #500000;
+  }
+
+  .cert{
+    position: relative;
+  }
+  .cert div{
+    padding-top: 50px;
+  }
+  .cert div p{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .mech{
+    color: #9cb6dd;
+  }
+
+  /* #6374ae */
+
+  /* Services */
+  .service-container{
+    position: relative;
+    background-color: #414e6e;
+    padding: 20px;
+  }
+    
+  .service-header{
+    background-color: #262c40;
+    padding: 5px 24px;
+  }
+
+  .service-col{
+    margin: 50px auto;
+  }
+}
