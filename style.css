@@ -200,7 +200,7 @@ https://twitter.com/mba_chibuezez
     padding: 20px;
     align-items: center;
   }
-  .skills-header, .service-header{
+  .skills-header{
     position: absolute;
     left: 50%;
     top: 15%;
@@ -274,15 +274,24 @@ https://twitter.com/mba_chibuezez
 
   /* Services */
   .service-container{
+    z-index: 3;
     position: relative;
     background-color: #262c40;
     padding: 20px;
   }
     
   .service-header{
+    position: absolute;
+    left: 50%;
+    top: 5;
+    transform: translate(-50%, 0);
+    text-align: center;
+    text-transform: uppercase;
     background-color: #414e6e;
     padding: 5px 24px;
+    border-radius: 100px;
   }
+
 
   .service-col{
     margin: 50px auto;
