@@ -225,6 +225,7 @@ https://twitter.com/mba_chibuezez
   }
   .skill-col{    
     margin: 50px auto;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -248,9 +249,6 @@ https://twitter.com/mba_chibuezez
   .fa-react{
     color: rgb(45, 45, 224);
   }
-  .fa-wrench{
-    color: #500000;
-  }
 
   .cert{
     position: relative;
@@ -272,16 +270,31 @@ https://twitter.com/mba_chibuezez
   /* Services */
   .service-container{
     position: relative;
-    background-color: #414e6e;
+    background-color: #262c40;
     padding: 20px;
   }
     
   .service-header{
-    background-color: #262c40;
+    background-color: #414e6e;
     padding: 5px 24px;
   }
 
   .service-col{
     margin: 50px auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .service{
+    background-color: #414e6e;
+    padding: 5px;
+  }
+  .service h3{
+    color: #9cb6dd;
+    text-decoration: underline;
+  }
+  .service p{
+    padding: 10px;
   }
 }
