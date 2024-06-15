@@ -311,4 +311,39 @@ https://twitter.com/mba_chibuezez
   .service p{
     padding: 10px;
   }
+
+
+
+  /* Projects */
+  .project-container{
+    position: relative;
+    padding: 20px;
+  }
+  .project-header{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    background-color: #414e6e;
+    padding: 8px 24px;
+    border-radius: 100px;
+  }
+  .project-col{
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project{
+    background-color: #414e6e;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .project i{
+    font-size: 10vw;
+    color: orange;
+  }
 }
