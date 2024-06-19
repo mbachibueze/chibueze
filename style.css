@@ -7,10 +7,9 @@
 body{
   background-color: #262c40;
 }
-li a{
-  text-decoration: none;
-}
+
 a{
+  text-decoration: none;
   color: white;
 }
 .main-container{
@@ -335,15 +334,28 @@ https://twitter.com/mba_chibuezez
     flex-direction: column;
     gap: 10px;
   }
+  .project-col a{
+    text-decoration: none;
+  }
   .project{
     background-color: #414e6e;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     padding: 10px;
   }
   .project i{
     font-size: 10vw;
-    color: orange;
+    color: #262c40;
+  }
+  .s-n i{
+    color: #262c40;
+  }
+  .project h2{
+    color: #9cb6dd;
+  }
+  .project p, .project span{
+    font-size: 3.8vw;
+    padding: 0 5px;
   }
 }
