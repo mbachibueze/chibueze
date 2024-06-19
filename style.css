@@ -192,18 +192,14 @@ https://twitter.com/mba_chibuezez
 
   /* Skill Set */
   .skills{
-    position: relative;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     padding: 20px;
     align-items: center;
   }
   .skills-header{
-    position: absolute;
-    left: 50%;
-    top: 15%;
-    transform: translate(-50%, 0);
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     background-color: #414e6e;
@@ -224,7 +220,6 @@ https://twitter.com/mba_chibuezez
   }
   .skill-col{    
     margin: 50px auto;
-    margin-top: 150px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -251,14 +246,15 @@ https://twitter.com/mba_chibuezez
     color: orange;
   }
   .fa-react{
-    color: rgb(45, 45, 224);
+    color: #262c40;
   }
 
   .cert{
-    position: relative;
+    display: flex;
+    flex-direction: column;
   }
   .cert div{
-    padding-top: 50px;
+    margin-top: 30px;
   }
   .cert div p{
     display: flex;
@@ -273,17 +269,15 @@ https://twitter.com/mba_chibuezez
 
   /* Services */
   .service-container{
-    z-index: 3;
-    position: relative;
+    margin-top: 50px;
     background-color: #262c40;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
     
   .service-header{
-    position: absolute;
-    left: 50%;
-    top: 5;
-    transform: translate(-50%, 0);
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     background-color: #414e6e;
@@ -294,7 +288,6 @@ https://twitter.com/mba_chibuezez
 
   .service-col{
     margin: 50px auto;
-    margin-top: 70px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -315,20 +308,17 @@ https://twitter.com/mba_chibuezez
 
   /* Projects */
   .project-container{
-    position: relative;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
   .project-header{
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translate(-50%, 0);
+    margin: 0 auto;
     background-color: #414e6e;
     padding: 8px 24px;
     border-radius: 100px;
   }
   .project-col{
-    padding: 10px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -343,6 +333,7 @@ https://twitter.com/mba_chibuezez
     flex-direction: column;
     gap: 5px;
     padding: 10px;
+    transition: all 0.5s;
   }
   .project i{
     font-size: 10vw;
@@ -357,5 +348,59 @@ https://twitter.com/mba_chibuezez
   .project p, .project span{
     font-size: 3.8vw;
     padding: 0 5px;
+  }
+  .project:hover{
+    background-color: #9cb6dd;
+    color: #262c40;
+  }
+
+
+  /* Contact Me */
+  .contact-container{
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #9cb6dd;
+  }
+  .contact-header{
+    color: white;
+    background-color: #414e6e;
+    padding: 8px 24px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .contact-link{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-link span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .con-icon{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    line-height: 30px;
+  }
+  .con-icon i{
+    color: #9cb6dd;
+  }
+
+  /* Footer */
+  footer{
+    text-align: center;
+    color: #9cb6dd;
+    padding: 10px 20px;
+    font-size: 3vw;
   }
 }
