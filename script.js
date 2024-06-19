@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', function() {
           notification.style.fontSize = '4vw';
           notification.style.color = '#9cb6dd';
           notification.style.position = 'fixed';
-          notification.style.top = '23.2%';
+          notification.style.top = '24.2%';
           notification.style.left = '50%';
           notification.style.textAlign = "center";
           notification.style.transform = 'translate(-50%, -200%)';
-          notification.style.backgroundColor = 'rgb(156, 182, 221)';
+          notification.style.backgroundColor = 'rgba(65, 78, 110, 0.5)';
           notification.style.color = '#fff';
           notification.style.padding = '10px 20px';
           notification.style.borderRadius = '5px';
