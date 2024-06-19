@@ -19,6 +19,9 @@ a{
 
 
 .navigation{
+  color: rgb(38, 44, 64);
+  color: rgb(65, 78, 110);
+  color: rgb(156, 182, 221);
   position: fixed;
   width: 100%;
   background-color: #262c40;
@@ -47,7 +50,13 @@ a{
 .dropdown_menu.open{
   height: 250px;
 }
-
+.fas {
+  color: #9cb6dd;
+  transition: color 0.3s;
+}
+.dropdown_menu.open .fas.fa-xmark {
+  color: #9cb6dd;
+}
 
 
 @media(max-width: 650px){
@@ -61,8 +70,9 @@ a{
     width: 95%;
     margin: auto;
   }
-  .nav-bar img{
-    width: 150px;
+  .fa-connectdevelop{
+   font-size: 30px;
+   color: #9cb6dd;
   }
   .nav-bar{
     padding: 10px 0;
@@ -71,7 +81,7 @@ a{
     justify-content: space-between;
   }
   .fa-bars{
-    color: white;
+    color: #9cb6dd;
     font-size: 6vw;
   }
   .nav-links{
@@ -144,6 +154,15 @@ a{
   .links{
     display: flex;
     gap: 10px;
+  }
+  .resume{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 3.2vw;
+    background-color: #414e6e;
+    padding: 2px 8px;
+    border-radius: 100px;
   }
 
   /* #438e96 

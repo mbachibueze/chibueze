@@ -16,27 +16,47 @@ const navClose = () =>{
   toggleBtnIcon.classList = isOpen ? "fas fa-xmark" : "fas fa-bars"
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
   const copyIcons = document.querySelectorAll('.fa-copy');
 
   copyIcons.forEach(icon => {
-    icon.addEventListener('click', function() {
+    icon.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default action of the click event
+
       const copyId = this.getAttribute('data-copy');
       const copyText = document.getElementById(copyId).innerText;
 
-      // Create a temporary textarea element to copy the text
-      const textarea = document.createElement('textarea');
-      textarea.value = copyText;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand('copy');
-      document.body.removeChild(textarea);
+      // Copy text to clipboard
+      navigator.clipboard.writeText(copyText)
+        .then(() => {
+          // Create and show a pop-up notification
+          const notification = document.createElement('div');
+          notification.textContent = 'Copied to clipboard';
+          notification.style.fontSize = '4vw';
+          notification.style.color = '#9cb6dd';
+          notification.style.position = 'fixed';
+          notification.style.top = '23.2%';
+          notification.style.left = '50%';
+          notification.style.textAlign = "center";
+          notification.style.transform = 'translate(-50%, -200%)';
+          notification.style.backgroundColor = 'rgb(156, 182, 221)';
+          notification.style.color = '#fff';
+          notification.style.padding = '10px 20px';
+          notification.style.borderRadius = '5px';
+          notification.style.zIndex = '9999';
+          document.body.appendChild(notification);
 
-      // Optional: Alert the user that the text has been copied
-      alert(`Copied: ${copyText}`);
+          // Remove the notification after 1 second
+          setTimeout(() => {
+            document.body.removeChild(notification);
+          }, 1000);
+        })
+        .catch(err => {
+          console.error('Error copying to clipboard:', err);
+        });
     });
   });
 });
+
 
 
