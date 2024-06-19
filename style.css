@@ -294,7 +294,7 @@ https://twitter.com/mba_chibuezez
   }
   .service{
     background-color: #414e6e;
-    padding: 5px;
+    padding: 10px;
   }
   .service h3{
     color: #9cb6dd;
@@ -344,6 +344,7 @@ https://twitter.com/mba_chibuezez
   }
   .project h2{
     color: #9cb6dd;
+    transition: color 0.5s;
   }
   .project p, .project span{
     font-size: 3.8vw;
@@ -353,6 +354,9 @@ https://twitter.com/mba_chibuezez
     background-color: #9cb6dd;
     color: #262c40;
   }
+  .project:hover h2 {
+    color: #262c40; /* Adding this to change h2 color on hover */
+}
 
 
   /* Contact Me */
