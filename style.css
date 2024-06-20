@@ -16,7 +16,9 @@ a{
   color: white;
   overflow-x: hidden;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 .navigation{
   color: rgb(38, 44, 64);
