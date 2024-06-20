@@ -174,41 +174,7 @@ https://twitter.com/mba_chibuezez
   */
 
 
-  /* About Section */
-  .about-me{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding: 20px;
-    background-color: #414e6e;
-  }
-  .about-header{ 
-    background-color: #262c40;
-    padding: 5px 10px;
-    border-radius: 100px;
-  }
 
-  .about-container{
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
-    align-items: center;
-    padding-top: 30px;
-  }
-  .about-container .img{
-    background-color: #262c40;
-  }
-  .about-container .img img{
-    border: 10px solid #414e6e;
-    border-top: 0;
-  }
-  .about-content{
-    display: flex;
-    flex-direction: column;
-    gap: 4vw;
-    text-wrap: wrap;
-  }
 
 
   /* Skill Set */
@@ -217,6 +183,7 @@ https://twitter.com/mba_chibuezez
     flex-direction: column;
     gap: 30px;
     padding: 20px;
+    padding-top: 80px;
     align-items: center;
   }
   .skills-header{
@@ -290,9 +257,8 @@ https://twitter.com/mba_chibuezez
 
   /* Services */
   .service-container{
-    margin-top: 50px;
-    background-color: #262c40;
     padding: 20px;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
   }
@@ -330,6 +296,7 @@ https://twitter.com/mba_chibuezez
   /* Projects */
   .project-container{
     padding: 20px;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
   }
@@ -384,6 +351,7 @@ https://twitter.com/mba_chibuezez
   .contact-container{
     position: relative;
     padding: 20px;
+    padding-top: 80px;
     text-align: center;
     display: flex;
     flex-direction: column;
