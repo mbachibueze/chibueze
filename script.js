@@ -16,6 +16,13 @@ const navClose = () =>{
   toggleBtnIcon.classList = isOpen ? "fas fa-xmark" : "fas fa-bars"
 }
 
+window.onscroll = function() {
+  if (dropDownMenu.classList.contains('open')) {
+    dropDownMenu.classList.remove('open');
+    toggleBtnIcon.classList = "fas fa-bars";
+  }
+};
+
 document.addEventListener('DOMContentLoaded', function() {
   const copyIcons = document.querySelectorAll('.fa-copy');
 
