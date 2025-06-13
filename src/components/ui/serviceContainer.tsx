@@ -40,7 +40,7 @@ export const Hero: React.FC<HeroProps> = ({
               <Link href={`${link}`}>
                 <Schedule className="bg-[#0d1321] hover:bg-[#c5832b] transition-all duration-500 text-white lg:px-10 px-6 py-3  lg:py-4 md:rounded-2xl rounded-2xl lg:text-base sm:text-base text-sm cursor-pointer flex items-center gap-3 w-fit " text={btn}/>
               </Link>
-              <Link href="https://github.com/mbachibueze" className='ml-10'><FaGithub size={25}/></Link>
+              <Link href="https://github.com/mbachibueze" className=''><FaGithub size={25}/></Link>
               <Link href="https://www.linkedin.com/in/mba-chibueze-8118a9252"><FaLinkedin size={25}/></Link>
               <Link href="https://twitter.com/mba_chibuezez"><FaTwitter size={25}/></Link>
               <Link href="https://wa.me/+2347012108363"><FaWhatsapp size={25}/></Link>
