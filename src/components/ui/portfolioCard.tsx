@@ -16,7 +16,7 @@ const PortfolioCard: React.FC<PortfolioCardProps>= ({name, image, link}) => {
           <div className='rounded-2xl'>
             <img src={image} alt={`Preview of ${name}`} className='shadow w-fit h-52 sm:h-80 lg:h-56 object-cover rounded-2xl transform transition-transform duration-500 group-hover:scale-105' />
           </div>
-          <h2 className='text-lg font-medium mt-2 p-2'>{name}</h2>
+          <h2 className='text-lg font-medium p-2'>{name}</h2>
         </div>
     </a>
   )

@@ -28,12 +28,13 @@ export const metadata: Metadata = {
   title: "Mba Chibueze | Frontend Developer & UI/UX Enthusiast",
   description: "Welcome to the portfolio of Mba Chibueze — a frontend developer crafting responsive, user-friendly web experiences using Next.js, Tailwind CSS, and modern web technologies.",
   keywords: ["Frontend Developer", "Next.js Portfolio", "Tailwind CSS", "React Developer", "UI/UX Design", "JavaScript Developer", "Web Development"],
-  authors: [{ name: "Your Name", url: "https://oba.vercel.app" }],
+  authors: [{ name: "Mba Chibueze", url: "https://chibueze.vercel.app" }],
   creator: "Mba Chibueze",
+  metadataBase: new URL("https://chibueze.vercel.app"), 
   openGraph: {
-    title: "Your Name | Frontend Developer",
+    title: "Mba Chibueze | Frontend Developer",
     description: "Explore clean and responsive web projects built with Next.js and Tailwind CSS.",
-    url: "https://oba.vercel.app",
+    url: "https://chibueze.vercel.app",
     siteName: "ObaTech",
     images: [
       {
