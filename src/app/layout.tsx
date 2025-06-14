@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "ObaTech",
     images: [
       {
-        url: "/landscape2.jpg", // Replace with your actual OG image
+        url: "https://chibueze.vercel.app/landscape2.jpg", // Replace with your actual OG image
         width: 1200,
         height: 630,
         alt: "ObaTech",
