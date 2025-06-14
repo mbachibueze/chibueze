@@ -1,5 +1,4 @@
 import React from 'react';
-import { IoMdArrowRoundForward } from 'react-icons/io';
 interface ScheduleProps {
   text?: string;
   className?: string;

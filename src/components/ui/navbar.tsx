@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link';
 
 import { useEffect, useState } from "react";
@@ -41,7 +40,7 @@ const Navbar = () => {
   const  [serviceOpen, setServiceOpen] = useState(false)
 
 
-  
+   /* eslint-disable react/no-unescaped-entities */
   return (
     <div  className={`fixed w-full z-40 transition-all duration-300 ${
       scrolled ? "bg-white/10 backdrop-blur-md shadow-md" : "bg-transparent"

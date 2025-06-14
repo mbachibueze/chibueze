@@ -1,4 +1,7 @@
+'use client'
+
 import React from "react";
+import { useState } from "react";
 
 import Image from "next/image";
 import Navbar from "@/components/ui/navbar";
@@ -7,6 +10,7 @@ import Footer from "@/components/ui/footer";
 import { Hero, Cta, Technologies } from "@/components/ui/serviceContainer";
 import PortfolioCard from '@/components/ui/portfolioCard'
 import ServiceCard from "@/components/ui/serviceCard";
+import TeamCard, {CardProps} from '@/components/ui/teamCard'
 
 export default function Home() {
 
@@ -85,6 +89,58 @@ export default function Home() {
     },
   ]
 
+  const [cardData] = useState<CardProps[]>([
+    {
+      backgroundImage: 'https://img.freepik.com/free-photo/worldface-american-man-white-background_53876-31194.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Temitope',
+      about: 'CEO and visionary leader with a passion for innovation and growth.',
+      stack: 'Leadership, Strategy',
+    },
+    {
+      backgroundImage: 'https://img.freepik.com/free-photo/young-african-american-woman-with-headband-posing_23-2148183427.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Amara',
+      about: 'Creative director driving impactful designs and user experiences.',
+      stack: 'UI/UX Design',
+    },
+    {
+      backgroundImage: 'https://img.freepik.com/premium-photo/minimal-head-shoulders-portrait-handsome-africanamerican-man-looking-camera-against-blue_236854-33949.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'James',
+      about: 'Backend developer ensuring seamless system performance.',
+      stack: 'Backend Development',
+    },
+    {
+      backgroundImage: 'https://img.freepik.com/premium-photo/afro-american-woman-mixed-race-posing-dark-background-urban-clothes-modern-pretty-smiling_188913-1681.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Chinwe',
+      about: 'Frontend developer crafting interactive and responsive interfaces.',
+      stack: 'Frontend Development',
+    },
+    {
+      backgroundImage: 'https://img.freepik.com/free-photo/confident-business-woman-portrait-smiling-face_53876-137693.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Adeola',
+      about: 'Data scientist uncovering insights to fuel smarter decisions.',
+      stack: 'Data Science',
+    },
+    {
+      backgroundImage: 'https://img.freepik.com/free-photo/portrait-serious-man_23-2148779998.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Victor',
+      about: 'Marketing expert connecting technology with the right audience.',
+      stack: 'Digital Marketing',
+    },
+    {
+      backgroundImage: 'https://img.freepik.com/premium-photo/close-up-portrait-young-woman-with-dreadlocks-against-white-background_1048944-19549237.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Aisha',
+      about: 'Mobile app developer delivering user-friendly experiences.',
+      stack: 'Mobile Development',
+    },
+    {
+      backgroundImage: 'https://img.freepik.com/free-photo/young-beautiful-african-girl-smiling-dark-wall_176420-5816.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Fatima',
+      about: 'Cybersecurity specialist safeguarding digital assets and systems.',
+      stack: 'Cybersecurity',
+    },
+  ])
+
+  
   return (
     <div>
       <Navbar/>
@@ -98,6 +154,7 @@ export default function Home() {
       />
 
 
+      {/* services */}
       <div className='bg-gray-100'>
         <div className="lg:w-[88%] w-[85%] m-auto flex flex-col gap-10 py-20">
           <h1 className='text-4xl lg:text-7xl md:text-5xl text-left text-[#0d1321] font-semibold  h-fit'>Services</h1>
@@ -114,6 +171,21 @@ export default function Home() {
           ))}
           </div>
         </div>
+      </div>
+
+      {/* Team */}
+      <div className='grid  gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:w-[80%] md:w-[90%] w-[95%] m-auto place-items-center  my-5 pb-10'>
+
+        {cardData.map((d,i) => (
+          <TeamCard
+            key={i}
+            backgroundImage={d.backgroundImage}
+            name={d.name}
+            about={d.about}
+            stack={d.stack}
+          />
+        ) )}
+
       </div>
 
 
@@ -140,14 +212,14 @@ export default function Home() {
         btn='Start a project'
       >
           <div className='grid lg:grid-cols-3 grid-cols-2 sm:gap-20 gap-10 place-items-center'>
-            <img src="/php.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <img src="/react.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <img src="/laravel.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <img src="/node.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <img src="/aws.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <img src="/ionic.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <img src="/digitalocean.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <img src="/python.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <Image src="/php.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <Image src="/react.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <Image src="/laravel.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <Image src="/node.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <Image src="/aws.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <Image src="/ionic.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <Image src="/digitalocean.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <Image src="/python.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
           </div>
       </Technologies>
 

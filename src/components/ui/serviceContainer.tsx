@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Schedule from '@/components/ui/schedule'
-import { link } from 'fs';
+import Image from 'next/image';
 import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 
@@ -9,7 +9,7 @@ interface HeroProps {
   subHead?: string;
   head: string;
   description: string;
-  imageSrc?: string;
+  imageSrc: string;
   btn: string;
   link?: string;
 }
@@ -48,7 +48,7 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
           <div className='grid place-items-center   '>
-            <img src={imageSrc} alt={head} className=' lg:w-[100%] sm:w-[90%] w-[100%] object-contain lg:ml-auto shadow  rounded-xl' />
+            <Image src={imageSrc} alt={head} className=' lg:w-[100%] sm:w-[90%] w-[100%] object-contain lg:ml-auto shadow  rounded-xl' />
           </div>
 
         </div>
