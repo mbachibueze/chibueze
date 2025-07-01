@@ -219,13 +219,13 @@ interface Testimony {
 
 export const Testimony: React.FC<Testimony> = ({image, name, testimony, company}) => {
   return (
-    <div className="shadow p-2 rounded-lg bg-amber-100 flex flex-col gap-2">
+    <div className="shadow p-2 rounded-lg bg-[#0d1321]/40 text-white flex flex-col gap-2">
 
-      <img src={image} alt="About Us" className='w-[100%] h-50 object-fit rounded-xl' />
+      <img src={image} alt="About Us" className='w-[100%]  object-fit rounded-xl' />
 
       <div className="flex flex-col gap-1 ">
         <h3 className="font-medium text-lg text-center capitalize">{name} - <span className="text-amber-700">{company}</span></h3>
-        <p className="text-sm ">{testimony}</p>
+        <p className="text-sm text-center">{testimony}</p>
       </div>
 
     </div>

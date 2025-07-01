@@ -63,9 +63,7 @@ const About = () => {
               I am always open to new opportunities and collaborations. Whether you have a project in mind or just want to connect, feel free to reach out. Let's work together to create something amazing!
             </p>
            
-            <div className='mt-5 ml-auto w-[100%] grid'>
-              <a href="https://www.linkedin.com/in/mba-chibueze-8118a9252" className='p-3 rounded lg:place-items-end md:place-items-center  ml-auto text-right bg-[#0d1321] text-white text-xl w-fit'>Connect on LinkedIn</a>
-            </div>
+
 
           </div>
         </div>
