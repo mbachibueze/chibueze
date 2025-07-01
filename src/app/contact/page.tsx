@@ -6,7 +6,7 @@ import Navbar from '@/components/ui/navbar'
 import Footer from '@/components/ui/footer'
 import toast from "react-hot-toast";
 import ScrollToTop from '@/components/ui/scrollToTop'
-import { FaTwitter, FaWhatsapp,FaLinkedin, FaChevronDown } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaWhatsapp,FaLinkedin, FaChevronDown } from "react-icons/fa";
 import Link from 'next/link'
 
 
@@ -76,6 +76,7 @@ const ContactUs = () => {
               <Link href="https://www.linkedin.com/in/mba-chibueze-8118a9252" className='p-3 rounded bg-[#c5832b] text-[#0d1321] text-xl w-fit'><FaLinkedin /></Link>
               <Link href="https://twitter.com/mba_chibuezez" className='p-3 rounded bg-[#c5832b] text-[#0d1321] text-xl w-fit'><FaTwitter /></Link>
               <Link href="https://wa.me/+2347012108363" className='p-3 rounded bg-[#c5832b] text-[#0d1321] text-xl w-fit'><FaWhatsapp /></Link>
+              <Link href="https://github.com/mbachibueze" className='p-3 rounded bg-[#c5832b] text-[#0d1321] text-xl w-fit'><FaGithub /></Link>
             </div>
 
             <img src="/contact.webp" alt="About Us" className='w-[100%] h-[100%] object-fit rounded-t-xl' />

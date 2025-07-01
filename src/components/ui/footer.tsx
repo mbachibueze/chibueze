@@ -57,6 +57,16 @@ const Footer = () => {
             </div>
 
             <div className='flex flex-col gap-4'>
+              <h5 className='font-semibold text-white'>Social</h5>
+              <ul className='text-gray-500 flex flex-col gap-4 lg:text-lg sm:text-base text-xs'>
+                <Link href='https://github.com/mbachibueze'>GitHub</Link>
+                <Link href='https://www.linkedin.com/in/mba-chibueze-8118a9252'>LinkedIn</Link>
+                <Link href='https://twitter.com/mba_chibuezez'>Twitter</Link>
+                <Link href='https://wa.me/+2347012108363'>Whatsapp</Link>
+              </ul>
+            </div>
+
+            <div className='flex flex-col gap-4'>
               <h5 className='font-semibold text-white'>Me</h5>
               <ul className='text-gray-500 flex flex-col gap-4 lg:text-lg sm:text-base text-xs'>
                 <Link href='/about'>
@@ -69,15 +79,7 @@ const Footer = () => {
             </div>
 
 
-            <div className='flex flex-col gap-4'>
-              <h5 className='font-semibold text-white'>Social</h5>
-              <ul className='text-gray-500 flex flex-col gap-4 lg:text-lg sm:text-base text-xs'>
-                <Link href='https://github.com/mbachibueze'>GitHub</Link>
-                <Link href='https://www.linkedin.com/in/mba-chibueze-8118a9252'>LinkedIn</Link>
-                <Link href='https://twitter.com/mba_chibuezez'>Twitter</Link>
-                <Link href='https://wa.me/+2347012108363'>Whatsapp</Link>
-              </ul>
-            </div>
+           
 
           </div>
         </div>
