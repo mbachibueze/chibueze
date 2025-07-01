@@ -19,6 +19,39 @@ export const metadata: Metadata = {
   title: "Mba Chibueze | Frontend Developer & UI/UX Enthusiast",
   description: "Welcome to the portfolio of Mba Chibueze — a frontend developer crafting responsive, user-friendly web experiences using Next.js, Tailwind CSS, and modern web technologies.",
   keywords: ["Frontend Developer", "Next.js Portfolio", "Tailwind CSS", "React Developer", "UI/UX Design", "JavaScript Developer", "Web Development"],
+  themeColor: "#0d1321",
+  colorScheme: "dark",
+  applicationName: "ObaTech",
+  generator: "Next.js",
+  referrer: "origin-when-cross-origin",
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-video-preview": "-1",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        rel: "icon",
+        url: "/favicon.ico",
+        sizes: "any",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-16x16.png",
+        sizes: "16x16",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-32x32.png",
+        sizes: "32x32",
+      },
+    ],
+  },
   authors: [{ name: "Mba Chibueze", url: "https://chibueze.vercel.app" }],
   creator: "Mba Chibueze",
   metadataBase: new URL("https://chibueze.vercel.app"), 
@@ -29,7 +62,7 @@ export const metadata: Metadata = {
     siteName: "ObaTech",
     images: [
       {
-        url: "https://chibueze.vercel.app/landscape2.jpg", // Replace with your actual OG image
+        url: "https://chibueze.vercel.app/landscape2.jpg", 
         width: 1200,
         height: 630,
         alt: "ObaTech",
@@ -42,7 +75,7 @@ export const metadata: Metadata = {
     title: "Mba Chibueze | Frontend Developer",
     description: "Check out the personal portfolio of Your Name, showcasing modern and responsive web apps.",
     creator: "@mba_chibuezez", // Optional
-    images: ["/landscape2.jpg"], // Replace with your actual OG image
+    images: ["https://chibueze.vercel.app/landscape2.jpg"], 
   },
 };
 
