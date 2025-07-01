@@ -30,7 +30,7 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="col-span-2 flex flex-col  gap-3">
               <h5 className='text-lg font-medium text-[#c5832b]'>
                 {subHead}
-              </h5>
+              </h5> 
             
               <h1 className=" font-medium lg:text-9xl md:text-7xl sm:text-6xl text-4xl">{head}</h1>
 
@@ -48,7 +48,7 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
 
           <div className='grid place-items-center   '>
-            <Image src={imageSrc} alt={head} className=' lg:w-[100%] sm:w-[90%] w-[100%] object-contain lg:ml-auto shadow  rounded-xl' />
+            <img src={imageSrc} alt={head} className=' lg:w-[100%] sm:w-[90%] w-[100%] object-contain lg:ml-auto shadow  rounded-xl' />
           </div>
 
         </div>
@@ -172,7 +172,7 @@ interface Technologies {
 
 export const Technologies: React.FC<Technologies> = ({head, description, btn, children, className, className2}) => {
   return (
-     <div className={`md:py-20 `}>
+     <div className='md:py-20'>
         <div className={`w-[88%] m-auto lg:grid lg:grid-cols-2 flex flex-col lg:gap-20 gap-10 my-20 items-center ${className2 ? className2 : ''}`}>
           <div className={`flex flex-col gap-3 ${className ? className : ''}`}>
             <h1 className='font-medium lg:text-7xl md:text-4xl sm:text-4xl text-3xl'>{head}</h1>
@@ -186,5 +186,48 @@ export const Technologies: React.FC<Technologies> = ({head, description, btn, ch
         </div>
 
       </div>
+  )
+}
+
+interface Testimonials{
+  children: React.ReactNode
+}
+
+export const Testimonials: React.FC<Testimonials> = ({children}) =>{
+  return (
+    <div className="w-[88%] m-auto lg:grid lg:grid-cols-1 flex flex-col lg:gap-20 gap-10 my-20 items-center">
+        <div className="flex flex-col gap-2 md:text-left text-center">
+          <h1 className='font-medium lg:text-7xl md:text-4xl sm:text-4xl text-3xl '>Testimonials</h1>
+          <p className='text-lg lg:text-xl leading-relaxed'>
+            My client's satisfaction is at the heart of everything I do. I believe in building strong, collaborative relationships and delivering solutions that truly make a difference. Each project is approached with dedication, creativity, and a commitment to excellence, ensuring that every detail aligns with my client's goals and vision. From the initial consultation to the final delivery and beyond, I strive to exceed expectations and provide ongoing support. The testimonials below reflect the trust my clients place in me and the positive impact my work has had on their businesses. I'm are proud to be a part of their journeys and grateful for the opportunity to help them grow and succeed.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 lg:w-[70%] md:w-[80%] w-[95%] m-auto">
+          {children}
+        </div>
+      </div>
+  )
+}
+
+interface Testimony {
+  image: string;
+  name: string;
+  company?: string;
+  testimony: string;
+}
+
+export const Testimony: React.FC<Testimony> = ({image, name, testimony, company}) => {
+  return (
+    <div className="shadow p-2 rounded-lg bg-amber-100 flex flex-col gap-2">
+
+      <img src={image} alt="About Us" className='w-[100%] h-50 object-fit rounded-xl' />
+
+      <div className="flex flex-col gap-1 ">
+        <h3 className="font-medium text-lg text-center capitalize">{name} - <span className="text-amber-700">{company}</span></h3>
+        <p className="text-sm ">{testimony}</p>
+      </div>
+
+    </div>
   )
 }

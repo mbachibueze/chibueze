@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+
+
+.service li{
+  cursor: pointer;
+}

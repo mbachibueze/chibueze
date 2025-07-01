@@ -47,36 +47,20 @@ const Footer = () => {
             
             <div className='flex flex-col gap-4'>
               <h5 className='font-semibold text-white'>Services</h5>
-              <ul className='text-gray-500 flex flex-col gap-4 lg:text-lg sm:text-base text-xs'>
-                <Link href="/services/wordpress">
-                  <li>WordPress Development</li>
-                </Link>
-                <Link href="/services/web-development">
+              <ul className='service text-gray-500 flex flex-col gap-4 lg:text-lg sm:text-base text-xs'>
                   <li>Web Applications</li>
-                </Link>
-                <Link href="/services/portals">
                   <li>School/University Portals</li>
-                </Link>
-                <Link href="/services/e-commerce">
                   <li>E-commerce Solutions</li>
-                </Link>
-                <Link href="/services/membership-platforms">
                   <li>Membership Platforms</li>
-                </Link>
-                <Link href="/services/enterprise-solutions">
                   <li>Enterprise Solutions</li>
-                </Link>
               </ul>
             </div>
 
             <div className='flex flex-col gap-4'>
-              <h5 className='font-semibold text-white'>Company</h5>
+              <h5 className='font-semibold text-white'>Me</h5>
               <ul className='text-gray-500 flex flex-col gap-4 lg:text-lg sm:text-base text-xs'>
                 <Link href='/about'>
-                  <li>About us</li>
-                </Link>
-                <Link href='/about'>
-                  <li>Careers</li>
+                  <li>About</li>
                 </Link>
                 <Link href='/contact'>
                   <li>Contact </li>
@@ -84,32 +68,14 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className='flex flex-col gap-4'>
-              <h5 className='font-semibold text-white'>Resources</h5>
-              <ul className='text-gray-500 flex flex-col gap-4 lg:text-lg sm:text-base text-xs'>
-                <li>Blog</li>
-                <Link href="/corporate-responsibility">
-                  <li>Coporate Responsibilty </li>
-                </Link>
-                <li>Support</li>
-              </ul>
-            </div>
 
             <div className='flex flex-col gap-4'>
               <h5 className='font-semibold text-white'>Social</h5>
               <ul className='text-gray-500 flex flex-col gap-4 lg:text-lg sm:text-base text-xs'>
-                <li>Instagram</li>
-                <li>LinkedIn</li>
-                <li>Facebook</li>
-              </ul>
-            </div>
-
-            <div className='flex flex-col gap-4'>
-              <h5 className='font-semibold text-white'>Legal</h5>
-              <ul className='text-gray-500 flex flex-col gap-4 lg:text-lg sm:text-base text-xs'>
-                <li>Terms of use</li>
-                <li>Privacy policy</li>
-                <li>Cookies policy</li>
+                <Link href='https://github.com/mbachibueze'>GitHub</Link>
+                <Link href='https://www.linkedin.com/in/mba-chibueze-8118a9252'>LinkedIn</Link>
+                <Link href='https://twitter.com/mba_chibuezez'>Twitter</Link>
+                <Link href='https://wa.me/+2347012108363'>Whatsapp</Link>
               </ul>
             </div>
 

@@ -7,16 +7,10 @@ import { useEffect, useState } from "react";
 
 import { IoMdClose } from "react-icons/io";
 
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
-
 
 
 import { CgMenuRightAlt } from "react-icons/cg";
-import { FaAngleDown, FaAngleRight }  from "react-icons/fa6";
+
 
 const Navbar = () => {
 
@@ -33,14 +27,11 @@ const Navbar = () => {
 
   const  [isOpen, setIsOpen] = useState(false)
 
-   const toggleDropdown = () => {
-    setServiceOpen(prev => !prev);
-  };
-
-  const  [serviceOpen, setServiceOpen] = useState(false)
+  
 
 
-   /* eslint-disable react/no-unescaped-entities */
+
+  /* eslint-disable react/no-unescaped-entities */
   return (
     <div  className={`fixed w-full z-40 transition-all duration-300 ${
       scrolled ? "bg-white/10 backdrop-blur-md shadow-md" : "bg-transparent"
@@ -72,43 +63,9 @@ const Navbar = () => {
             {/* Nav links */}
           <ul className="flex flex-col justify-between gap-3 py-5 text-lg transition-all duration-1000 ease-in-out text-[#0d1321]">
             <Link href="/"><li className='hover:text-[#c5832b] cursor-pointer'>Home</li></Link>
-            <Link href="/about"><li className='hover:text-[#c5832b] py-2 cursor-pointer'>About us</li></Link>
-
-            <li className='flex items-center justify-between gap-5 cursor-pointer pt-2 hover:text-[#c5832b]' onClick={toggleDropdown}>Service
-                {serviceOpen ? <FaAngleDown className='text-[#c5832b]'/> : <FaAngleRight className=''/>}
-               </li>
-              <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${serviceOpen ? 'h-52 ' : 'h-0 '}`}
-              >
-                <div className="flex flex-col gap-2 rounded-md px-4">
-                  <Link href="/services/wordpress">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">WordPress Development</ul>
-                   </Link>
-                  <Link href="/services/web-development">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">Web Development</ul>
-                   </Link>
-                  <Link href="/services/portals">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">School/University Portals</ul>
-                   </Link>
-                  <Link href="/services/e-commerce">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">E-commerce Solutions</ul>
-                   </Link>
-                  <Link href="/services/membership-platforms">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">Membership Platforms</ul>
-                   </Link>
-                  <Link href="/services/enterprise-solutions">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">Enterprise Solutions</ul>
-                   </Link>
-
-                </div>
-              </div>
-
-            <Link href="/portfolio"><li className='hover:text-[#c5832b] py-2 cursor-pointer'>Portfolio</li></Link>
-            <Link href='/blog'>
-              <li className='hover:text-[#c5832b] py-2 cursor-pointer'>Blog</li>
-            </Link>
+            <Link href="/about"><li className='hover:text-[#c5832b] py-2 cursor-pointer'>About</li></Link>
             <Link href="/contact">
-              <li className='hover:text-[#c5832b] py-2 cursor-pointer'>Contact Us</li>
+              <li className='hover:text-[#c5832b] py-2 cursor-pointer'>Contact</li>
             </Link>
 
           </ul>
@@ -129,41 +86,9 @@ const Navbar = () => {
           <div className='lg:block hidden'>
             <ul className="flex justify-between gap-10 text-lg transition-all duration-1000 ease-in-out">
               <Link href="/"><li className='hover:text-[#c5832b] cursor-pointer'>Home</li></Link>
-              <Link href="/about"><li className='hover:text-[#c5832b] cursor-pointer'>About us</li></Link>
-              <HoverCard>
-                <HoverCardTrigger className='flex items-center gap-3 cursor-pointer'>Services <FaAngleDown size={14}/></HoverCardTrigger>
-                <HoverCardContent className='border-none bg-white shadow w-[100%]'>
-
-                  <div className="grid grid-cols-3 gap-10 rounded-md px-4">
-                  <Link href="/services/wordpress">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">WordPress Development</ul>
-                   </Link>
-                  <Link href="/services/web-development">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">Web Development</ul>
-                   </Link>
-                  <Link href="/services/portals">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">School/University Portals</ul>
-                   </Link>
-                  <Link href="/services/e-commerce">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">E-commerce Solutions</ul>
-                   </Link>
-                  <Link href="/services/membership-platforms">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">Membership Platforms</ul>
-                   </Link>
-                  <Link href="/services/enterprise-solutions">
-                    <ul className="hover:text-[#c5832b] cursor-pointer">Enterprise Solutions</ul>
-                   </Link>
-
-                </div>
-                </HoverCardContent>
-              </HoverCard>
-              
-              <Link href="/portfolio"><li className='hover:text-[#c5832b] cursor-pointer'>Portfolio</li></Link>
-              <Link href="/blog">
-                <li className='hover:text-[#c5832b] cursor-pointer'>Blog</li>
-              </Link>
+              <Link href="/about"><li className='hover:text-[#c5832b] cursor-pointer'>About</li></Link>
               <Link href="/contact">
-              <li className='hover:text-[#c5832b] cursor-pointer'>Contact Us</li>
+              <li className='hover:text-[#c5832b] cursor-pointer'>Contact</li>
             </Link>
             </ul>
           </div>

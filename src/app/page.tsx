@@ -7,7 +7,7 @@ import Image from "next/image";
 import Navbar from "@/components/ui/navbar";
 import ScrollToTop from "@/components/ui/scrollToTop";
 import Footer from "@/components/ui/footer";
-import { Hero, Cta, Technologies } from "@/components/ui/serviceContainer";
+import { Hero, Cta, Technologies, Testimonials, Testimony } from "@/components/ui/serviceContainer";
 import PortfolioCard from '@/components/ui/portfolioCard'
 import ServiceCard from "@/components/ui/serviceCard";
 
@@ -89,6 +89,28 @@ export default function Home() {
     },
   ]
 
+  const testimony = [
+     {
+      image: 'https://img.freepik.com/free-photo/confident-business-woman-portrait-smiling-face_53876-137693.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Adeola Olufemi',
+      company: 'Bugu Pay',
+      testimony: "I had a fantastic experience working with this frontend developer. He were professional, responsive, and delivered a high-quality website that exceeded my expectations. The attention to detail and commitment to excellence is truly commendable!"
+    },
+    {
+      image: 'https://img.freepik.com/premium-photo/close-up-portrait-young-woman-with-dreadlocks-against-white-background_1048944-19549237.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Temitope Olufemi',
+      company: 'todex',
+      testimony: "The website is a masterpiece! The design is sleek, the functionality is top-notch, and the user experience is seamless. I couldn't be happier with the results. Highly recommend!"
+    },
+    {
+      image: 'https://img.freepik.com/premium-photo/minimal-head-shoulders-portrait-handsome-africanamerican-man-looking-camera-against-blue_236854-33949.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
+      name: 'Temitope Olufemi',
+      company: 'Eazzi Exchange',
+      testimony: "I am thoroughly impressed with the quality of work delivered. The website is not only visually appealing but also highly functional. The developer's expertise in frontend technologies is evident in every aspect of the site. I highly recommend their services!"
+    },
+
+   
+  ]
  
 
   
@@ -148,16 +170,24 @@ export default function Home() {
         btn='Start a project'
       >
           <div className='grid lg:grid-cols-3 grid-cols-2 sm:gap-20 gap-10 place-items-center'>
-            <Image src="/php.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <Image src="/react.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <Image src="/laravel.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <Image src="/node.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <Image src="/aws.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <Image src="/ionic.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <Image src="/digitalocean.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
-            <Image src="/python.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <img src="/react.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <img src="/node.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
+            <img src="/python.webp" alt="php" className='lg:w-[150px] sm:w-[200px] w-[150px]'/>
           </div>
       </Technologies>
+
+      {/* Testimonials */}
+      <Testimonials>
+        {testimony.map((testimony, index) => (
+          <Testimony
+            key={index}
+            image={testimony.image}
+            name={testimony.name}
+            company={testimony.company}
+            testimony={testimony.testimony}
+          />
+        ))}
+      </Testimonials>
 
       <Cta
         head1='Need a custom solution'

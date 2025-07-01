@@ -1,9 +1,11 @@
 import React from 'react';
+import Link from 'next/link';
 interface ScheduleProps {
   text?: string;
   className?: string;
   onClick?: () => void;
 }
+
 
 const Schedule: React.FC<ScheduleProps> = ({
   text = "Schedule a Meeting",
@@ -15,9 +17,11 @@ const Schedule: React.FC<ScheduleProps> = ({
 
   return (
     <div>
-      <button className={`${baseClass} ${className}`} onClick={onClick}>
-        {text}
-      </button>
+      <Link href={'/contact'}>
+        <button className={`${baseClass} ${className}`} onClick={onClick}>
+          {text}
+        </button>
+      </Link>
     </div>
   );
 };
