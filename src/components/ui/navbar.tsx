@@ -77,7 +77,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className='flex justify-between items-center md:py-4 py-2 md:w-[90%] w-[95%] m-auto '>
+      <div className='flex justify-between items-center py-2 md:w-[90%] w-[95%] m-auto '>
         <div className='flex items-center gap-20'>
           <div>
             {/* <Image src="/logo.png" alt="Logo" width={100} height={100} className="pl-2 w-20 sm:w-24 md:w-21 lg:w-25 h-auto" /> */}

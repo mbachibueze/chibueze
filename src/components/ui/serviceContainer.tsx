@@ -32,7 +32,7 @@ export const Hero: React.FC<HeroProps> = ({
                 {subHead}
               </h5> 
             
-              <h1 className=" font-medium lg:text-7xl md:text-6xl sm:text-5xl text-4xl">{head}</h1>
+              <h1 className=" font-medium lg:text-7xl md:text-7xl sm:text-5xl text-4xl">{head}</h1>
 
               <p className="lg:text-2xl md:text-xl sm:text-lg  leading-relaxed lg:w-[75%]">{description}</p>
             

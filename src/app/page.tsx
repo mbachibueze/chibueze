@@ -98,13 +98,13 @@ export default function Home() {
     },
     {
       image: 'https://img.freepik.com/premium-photo/close-up-portrait-young-woman-with-dreadlocks-against-white-background_1048944-19549237.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
-      name: 'Temitope Olufemi',
+      name: 'Aisha Kofi',
       company: 'todex',
       testimony: "The website is a masterpiece! The design is sleek, the functionality is top-notch, and the user experience is seamless. I couldn't be happier with the results. Highly recommend!"
     },
     {
       image: 'https://img.freepik.com/premium-photo/minimal-head-shoulders-portrait-handsome-africanamerican-man-looking-camera-against-blue_236854-33949.jpg?uid=R77772689&ga=GA1.1.746289648.1661586601&semt=ais_hybrid',
-      name: 'Temitope Olufemi',
+      name: 'Victor Emmanuel',
       company: 'Eazzi Exchange',
       testimony: "I am thoroughly impressed with the quality of work delivered. The website is not only visually appealing but also highly functional. The developer's expertise in frontend technologies is evident in every aspect of the site. I highly recommend their services!"
     },
