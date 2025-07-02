@@ -61,7 +61,7 @@ const Navbar = () => {
             
 
             {/* Nav links */}
-          <ul className="flex flex-col justify-between gap-3 py-5 text-lg transition-all duration-1000 ease-in-out text-[#0d1321]">
+          <ul className="flex flex-col justify-between gap-3 py-5 sm:text-base text-lg transition-all duration-1000 ease-in-out text-[#0d1321]">
             <Link href="/"><li className='hover:text-[#c5832b] cursor-pointer'>Home</li></Link>
             <Link href="/about"><li className='hover:text-[#c5832b] py-2 cursor-pointer'>About</li></Link>
             <Link href="/contact">
@@ -84,7 +84,7 @@ const Navbar = () => {
             <h1 className='font-bold text-2xl'>ObaTech</h1>
           </div>
           <div className='lg:block hidden'>
-            <ul className="flex justify-between gap-10 text-lg transition-all duration-1000 ease-in-out">
+            <ul className="flex justify-between gap-10 sm:text-base text-lg transition-all duration-1000 ease-in-out">
               <Link href="/"><li className='hover:text-[#c5832b] cursor-pointer'>Home</li></Link>
               <Link href="/about"><li className='hover:text-[#c5832b] cursor-pointer'>About</li></Link>
               <Link href="/contact">
