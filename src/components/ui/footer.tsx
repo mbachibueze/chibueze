@@ -16,7 +16,7 @@ const Footer = () => {
 
   
   return (
-    <div className=''>
+    <footer className=''>
       <div className='bg-[#0d1321] text-white lg:pt-20 md:pt-10 pt-15 rounded-t-3xl pb-1'>
         <div className=' lg:w-[85%] w-[85%] m-auto my-10 flex flex-col gap-5'>
 
@@ -92,7 +92,7 @@ const Footer = () => {
            <p className='text-gray-500 lg:text-lg sm:text-base text-xs text-center leading-loose'>Copyright © 2025 <span className='text-white cursor-pointer hover:text-[#c5832b] '>Mba Chibueze</span> All Rights Reserved.</p>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

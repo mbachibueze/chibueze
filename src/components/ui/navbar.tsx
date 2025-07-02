@@ -33,7 +33,7 @@ const Navbar = () => {
 
   /* eslint-disable react/no-unescaped-entities */
   return (
-    <div  className={`fixed w-full z-40 transition-all duration-300 ${
+    <nav  className={`fixed w-full z-40 transition-all duration-300 ${
       scrolled ? "bg-white/10 backdrop-blur-md shadow-md" : "bg-transparent"
     }`}>
 
@@ -106,7 +106,7 @@ const Navbar = () => {
 
       </div>
 
-    </div>
+    </nav>
   )
 }
 

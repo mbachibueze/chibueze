@@ -115,7 +115,7 @@ export default function Home() {
 
   
   return (
-    <div>
+    <main>
       <Navbar/>
       <ScrollToTop/>
       <Hero
@@ -200,6 +200,6 @@ export default function Home() {
 
 
       <Footer/>
-    </div>
+    </main>
   );
 }

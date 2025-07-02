@@ -32,13 +32,13 @@ export const Hero: React.FC<HeroProps> = ({
                 {subHead}
               </h5> 
             
-              <h1 className=" font-medium lg:text-9xl md:text-7xl sm:text-6xl text-4xl">{head}</h1>
+              <h1 className=" font-medium lg:text-7xl md:text-6xl sm:text-5xl text-4xl">{head}</h1>
 
               <p className="lg:text-2xl md:text-xl sm:text-lg  leading-relaxed lg:w-[75%]">{description}</p>
             
             <div className='flex items-center gap-5  h-fit'>
               <Link href={`${link}`}>
-                <Schedule className="bg-[#0d1321] hover:bg-[#c5832b] transition-all duration-500 text-white lg:px-10 px-6 py-3  lg:py-4 md:rounded-2xl rounded-2xl lg:text-base sm:text-base text-sm cursor-pointer flex items-center gap-3 w-fit " text={btn}/>
+                <Schedule className="bg-[#0d1321] hover:bg-[#c5832b] transition-all duration-500 text-white lg:px-10 px-6 py-2  lg:py-4 md:rounded-2xl rounded-2xl lg:text-base sm:text-base text-sm cursor-pointer flex items-center gap-3 w-fit " text={btn}/>
               </Link>
               <Link href="https://github.com/mbachibueze" className=''><FaGithub size={25}/></Link>
               <Link href="https://www.linkedin.com/in/mba-chibueze-8118a9252"><FaLinkedin size={25}/></Link>
